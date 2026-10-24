@@ -1,0 +1,1 @@
+{"equipo_real": "N100", "escenario": "interrupcion", "inicio": 1792617080.6784463, "fin": 1792617110.6906505, "esperado": "servicio reiniciado", "detalle": "latido terminado con SIGTERM; el vigilante lo vuelve a arrancar a los 30 s", "t": 1792617110.7042499}

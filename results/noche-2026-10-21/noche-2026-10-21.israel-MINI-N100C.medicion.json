@@ -1,0 +1,25 @@
+{
+  "equipo": "israel-MINI-N100C",
+  "modelo": "gemma3:4b",
+  "opciones": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 8192
+  },
+  "inicio": 1792585801.6369524,
+  "pared_s": 127.6,
+  "total_s": 127.6,
+  "carga_s": 6.4,
+  "tokens_entrada": 955,
+  "tokens_salida": 494,
+  "entrada_tok_s": 21.6,
+  "salida_tok_s": 6.4,
+  "antes": {
+    "mem_disp_mb": 6147,
+    "temp_max_c": 72.0
+  },
+  "despues": {
+    "mem_disp_mb": 2311,
+    "temp_max_c": 74.0
+  }
+}
