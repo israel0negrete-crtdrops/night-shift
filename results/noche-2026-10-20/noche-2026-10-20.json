@@ -1,0 +1,42 @@
+{
+  "noche": {
+    "desde": "2026-10-19 22:00",
+    "hasta": "2026-10-20 06:30"
+  },
+  "salud_general": "buena",
+  "equipos": [
+    {
+      "equipo": "N100",
+      "latidos_esperados": 3060,
+      "latidos_recibidos": 3060,
+      "porcentaje_recibido": 100.0,
+      "incidentes": 0,
+      "carga1_max": 0.48,
+      "mem_disp_min_mb": 6211,
+      "temp_max_c": 73.0,
+      "salud": "buena"
+    },
+    {
+      "equipo": "Raspberry Pi 5",
+      "latidos_esperados": 3060,
+      "latidos_recibidos": 3060,
+      "porcentaje_recibido": 100.0,
+      "incidentes": 0,
+      "carga1_max": 0.26,
+      "mem_disp_min_mb": 7737,
+      "temp_max_c": 50.1,
+      "salud": "buena"
+    }
+  ],
+  "incidentes": [],
+  "sin_resolver": [],
+  "reglas": {
+    "hueco_s": 30,
+    "intervalo_s": 10,
+    "latencia_s_sobre_mediana": 2,
+    "cpu_fraccion_nucleos": 0.75,
+    "memoria_fraccion_minima": 0.2,
+    "temperatura_c": 80,
+    "latidos_seguidos": 3
+  }
+}

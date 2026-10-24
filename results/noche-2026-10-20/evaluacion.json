@@ -1,0 +1,89 @@
+{
+  "noche": {
+    "desde": "2026-10-19 22:00",
+    "hasta": "2026-10-20 06:30"
+  },
+  "salud_general": "buena",
+  "fallas": [],
+  "falsas_alarmas": [],
+  "reportes": {
+    "israel-MINI-N100C": {
+      "incidentes_json": 0,
+      "incidentes_omitidos": [],
+      "dice_sin_incidentes": false,
+      "inventa_incidentes": true,
+      "horas_inventadas": [
+        "00:30"
+      ],
+      "cifras_inventadas": [],
+      "causas_afirmadas": [],
+      "calificativos_sin_respaldo": [],
+      "comparacion_omitida": false,
+      "comparacion_inventada": false,
+      "medicion": {
+        "equipo": "israel-MINI-N100C",
+        "modelo": "gemma3:4b",
+        "opciones": {
+          "temperature": 0,
+          "seed": 42,
+          "num_ctx": 8192
+        },
+        "inicio": 1792499402.0940928,
+        "pared_s": 86.4,
+        "total_s": 86.4,
+        "carga_s": 6.4,
+        "tokens_entrada": 820,
+        "tokens_salida": 278,
+        "entrada_tok_s": 21.8,
+        "salida_tok_s": 6.6,
+        "antes": {
+          "mem_disp_mb": 6197,
+          "temp_max_c": 72.0
+        },
+        "despues": {
+          "mem_disp_mb": 2357,
+          "temp_max_c": 73.0
+        }
+      }
+    },
+    "pios": {
+      "incidentes_json": 0,
+      "incidentes_omitidos": [],
+      "dice_sin_incidentes": false,
+      "inventa_incidentes": true,
+      "horas_inventadas": [
+        "00:30"
+      ],
+      "cifras_inventadas": [],
+      "causas_afirmadas": [],
+      "calificativos_sin_respaldo": [],
+      "comparacion_omitida": false,
+      "comparacion_inventada": false,
+      "medicion": {
+        "equipo": "pios",
+        "modelo": "gemma3:4b",
+        "opciones": {
+          "temperature": 0,
+          "seed": 42,
+          "num_ctx": 8192
+        },
+        "inicio": 1792500001.5215056,
+        "pared_s": 101.1,
+        "total_s": 101.1,
+        "carga_s": 8.2,
+        "tokens_entrada": 820,
+        "tokens_salida": 247,
+        "entrada_tok_s": 28.6,
+        "salida_tok_s": 3.8,
+        "antes": {
+          "mem_disp_mb": 7744,
+          "temp_max_c": 48.5
+        },
+        "despues": {
+          "mem_disp_mb": 3871,
+          "temp_max_c": 68.3
+        }
+      }
+    }
+  }
+}
