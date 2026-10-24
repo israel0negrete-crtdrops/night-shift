@@ -1,0 +1,6 @@
+{"equipo_real": "Raspberry Pi 5", "escenario": "silencio", "inicio": 1792617080.864839, "fin": 1792617140.8650103, "esperado": "el equipo no envió", "detalle": "latido vivo sin enviar 1 min", "t": 1792617140.8650258}
+{"equipo_real": "Raspberry Pi 5", "escenario": "cpu", "inicio": 1792617140.8653893, "fin": 1792617320.8854563, "esperado": "saturación de CPU", "detalle": "4 procesos ocupados 3 min", "t": 1792617320.8854716}
+{"equipo_real": "Raspberry Pi 5", "escenario": "pausa", "inicio": 1792617320.8857276, "fin": 1792617600.0, "esperado": "sin latido (sin resolver)", "detalle": "latido terminado y retenido por el vigilante hasta las 15:20", "t": 1792617320.8958745}
+{"equipo_real": "Raspberry Pi 5", "escenario": "silencio", "inicio": 1792647000.0003247, "fin": 1792647300.0005567, "esperado": "el equipo no envió", "detalle": "latido vivo sin enviar 5 min", "t": 1792647300.0005724}
+{"equipo_real": "Raspberry Pi 5", "escenario": "cpu", "inicio": 1792657800.0003567, "fin": 1792658400.0407667, "esperado": "saturación de CPU", "detalle": "4 procesos ocupados 10 min", "t": 1792658400.040782}
+{"equipo_real": "Raspberry Pi 5", "escenario": "pausa", "inicio": 1792669200.0003579, "fin": 1792673400.0, "esperado": "sin latido (sin resolver)", "detalle": "latido terminado y retenido por el vigilante hasta las 06:50", "t": 1792669200.0148091}
