@@ -1,0 +1,198 @@
+{
+  "noche": {
+    "desde": "2026-10-22 22:00",
+    "hasta": "2026-10-23 06:30"
+  },
+  "salud_general": "mala",
+  "equipos": [
+    {
+      "equipo": "N100",
+      "latidos_esperados": 3060,
+      "latidos_recibidos": 2796,
+      "porcentaje_recibido": 91.4,
+      "incidentes": 5,
+      "carga1_max": 4.25,
+      "mem_disp_min_mb": 6401,
+      "temp_max_c": 84.0,
+      "salud": "mala"
+    },
+    {
+      "equipo": "Raspberry Pi 5",
+      "latidos_esperados": 3060,
+      "latidos_recibidos": 3014,
+      "porcentaje_recibido": 98.5,
+      "incidentes": 4,
+      "carga1_max": 0.24,
+      "mem_disp_min_mb": 1326,
+      "temp_max_c": 51.2,
+      "salud": "regular"
+    }
+  ],
+  "incidentes": [
+    {
+      "equipo": "Raspberry Pi 5",
+      "tipo": "servicio reiniciado",
+      "inicio": "22:29:50",
+      "fin": "22:30:30",
+      "duracion_s": 39,
+      "detectado": "22:30:20",
+      "retraso_deteccion_s": 30,
+      "se_recupero_solo": true,
+      "sin_resolver": false,
+      "evidencia": [
+        "Ningún latido recibido de 22:29:50 a 22:30:30 (39 s; se esperaba uno cada 10 s).",
+        "El latido siguiente viene de un proceso nuevo, arrancado a las 22:30:30."
+      ],
+      "id": 1
+    },
+    {
+      "equipo": "N100",
+      "tipo": "latencia",
+      "inicio": "23:20:07",
+      "fin": "23:25:57",
+      "duracion_s": 350,
+      "detectado": "23:20:27",
+      "retraso_deteccion_s": 20,
+      "se_recupero_solo": true,
+      "sin_resolver": false,
+      "evidencia": [
+        "36 latidos seguidos llegaron con retraso: hasta 5.0 s por encima de lo normal de la noche (0.00 s)."
+      ],
+      "id": 2
+    },
+    {
+      "equipo": "N100",
+      "tipo": "el equipo no envió",
+      "inicio": "00:39:52",
+      "fin": "00:44:02",
+      "duracion_s": 250,
+      "detectado": "00:40:22",
+      "retraso_deteccion_s": 30,
+      "se_recupero_solo": true,
+      "sin_resolver": false,
+      "evidencia": [
+        "Ningún latido recibido de 00:39:52 a 00:44:02 (250 s; se esperaba uno cada 10 s).",
+        "Mismo proceso antes y después; faltan 24 latidos en la secuencia.",
+        "El propio equipo registró 24 latidos como no enviados en ese lapso."
+      ],
+      "id": 3
+    },
+    {
+      "equipo": "N100",
+      "tipo": "saturación de CPU",
+      "inicio": "01:31:32",
+      "fin": "01:40:12",
+      "duracion_s": 520,
+      "detectado": "01:31:52",
+      "retraso_deteccion_s": 20,
+      "se_recupero_solo": true,
+      "sin_resolver": false,
+      "evidencia": [
+        "Carga de 1 minuto entre 3.13 y 4.25 con 4 núcleos, en 53 latidos seguidos."
+      ],
+      "id": 4
+    },
+    {
+      "equipo": "N100",
+      "tipo": "temperatura alta",
+      "inicio": "01:37:22",
+      "fin": "01:45:32",
+      "duracion_s": 490,
+      "detectado": "01:37:42",
+      "retraso_deteccion_s": 20,
+      "se_recupero_solo": true,
+      "sin_resolver": false,
+      "evidencia": [
+        "Temperatura hasta 84.0 °C en 50 latidos seguidos."
+      ],
+      "id": 5
+    },
+    {
+      "equipo": "Raspberry Pi 5",
+      "tipo": "memoria baja",
+      "inicio": "02:50:10",
+      "fin": "02:56:00",
+      "duracion_s": 350,
+      "detectado": "02:50:30",
+      "retraso_deteccion_s": 20,
+      "se_recupero_solo": true,
+      "sin_resolver": false,
+      "evidencia": [
+        "Memoria disponible entre 1326 y 1395 MB de 8062 MB, en 36 latidos seguidos."
+      ],
+      "id": 6
+    },
+    {
+      "equipo": "Raspberry Pi 5",
+      "tipo": "latidos perdidos en el camino",
+      "inicio": "03:39:50",
+      "fin": "03:47:10",
+      "duracion_s": 440,
+      "detectado": "03:40:20",
+      "retraso_deteccion_s": 30,
+      "se_recupero_solo": true,
+      "sin_resolver": false,
+      "evidencia": [
+        "Ningún latido recibido de 03:39:50 a 03:47:10 (440 s; se esperaba uno cada 10 s).",
+        "Mismo proceso antes y después; faltan 43 latidos en la secuencia.",
+        "El equipo registró 21 como no enviados; 22 salieron y no llegaron."
+      ],
+      "id": 7
+    },
+    {
+      "equipo": "Raspberry Pi 5",
+      "tipo": "latencia",
+      "inicio": "04:50:03",
+      "fin": "04:57:53",
+      "duracion_s": 470,
+      "detectado": "04:50:23",
+      "retraso_deteccion_s": 20,
+      "se_recupero_solo": true,
+      "sin_resolver": false,
+      "evidencia": [
+        "48 latidos seguidos llegaron con retraso: hasta 3.0 s por encima de lo normal de la noche (0.00 s)."
+      ],
+      "id": 8
+    },
+    {
+      "equipo": "N100",
+      "tipo": "sin latido",
+      "inicio": "05:49:52",
+      "fin": null,
+      "duracion_s": null,
+      "detectado": "05:50:22",
+      "retraso_deteccion_s": 30,
+      "se_recupero_solo": false,
+      "sin_resolver": true,
+      "evidencia": [
+        "Ningún latido recibido de 05:49:52 a 06:30:00 (2407 s; se esperaba uno cada 10 s).",
+        "Al cierre de la ventana seguía sin llegar ningún latido."
+      ],
+      "id": 9
+    }
+  ],
+  "sin_resolver": [
+    9
+  ],
+  "reglas": {
+    "hueco_s": 30,
+    "intervalo_s": 10,
+    "latencia_s_sobre_mediana": 2,
+    "cpu_fraccion_nucleos": 0.75,
+    "memoria_fraccion_minima": 0.2,
+    "temperatura_c": 80,
+    "latidos_seguidos": 3
+  },
+  "comparacion": {
+    "noche_anterior": {
+      "desde": "2026-10-21 22:00",
+      "hasta": "2026-10-22 06:30"
+    },
+    "salud_anterior": "mala",
+    "incidentes_anterior": 8,
+    "porcentaje_recibido_anterior": {
+      "N100": 99.9,
+      "Raspberry Pi 5": 87.2
+    }
+  }
+}
