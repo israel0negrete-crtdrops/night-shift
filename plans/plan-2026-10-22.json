@@ -1,0 +1,57 @@
+[
+ {
+  "hora": "22:30",
+  "equipo": "pios",
+  "escenario": "interrupcion"
+ },
+ {
+  "hora": "23:20",
+  "equipo": "israel-MINI-N100C",
+  "escenario": "latencia",
+  "de": "israel-MINI-N100C",
+  "ms": 5000,
+  "min": 6
+ },
+ {
+  "hora": "00:40",
+  "equipo": "israel-MINI-N100C",
+  "escenario": "silencio",
+  "min": 4
+ },
+ {
+  "hora": "01:30",
+  "equipo": "israel-MINI-N100C",
+  "escenario": "cpu",
+  "procesos": 4,
+  "min": 10,
+  "temp_max": 85
+ },
+ {
+  "hora": "02:50",
+  "equipo": "pios",
+  "escenario": "memoria",
+  "dejar_pct": 15,
+  "min": 6
+ },
+ {
+  "hora": "03:40",
+  "equipo": "israel-MINI-N100C",
+  "escenario": "corte",
+  "de": "pios",
+  "min": 7
+ },
+ {
+  "hora": "04:50",
+  "equipo": "israel-MINI-N100C",
+  "escenario": "latencia",
+  "de": "pios",
+  "ms": 3000,
+  "min": 8
+ },
+ {
+  "hora": "05:50",
+  "equipo": "israel-MINI-N100C",
+  "escenario": "pausa",
+  "hasta": "06:45"
+ }
+]

@@ -1,0 +1,49 @@
+[
+ {
+  "hora": "x",
+  "equipo": "israel-MINI-N100C",
+  "escenario": "interrupcion"
+ },
+ {
+  "hora": "x",
+  "equipo": "israel-MINI-N100C",
+  "escenario": "corte",
+  "de": "pios",
+  "min": 1
+ },
+ {
+  "hora": "x",
+  "equipo": "israel-MINI-N100C",
+  "escenario": "latencia",
+  "de": "pios",
+  "ms": 8000,
+  "min": 1.5
+ },
+ {
+  "hora": "x",
+  "equipo": "israel-MINI-N100C",
+  "escenario": "memoria",
+  "dejar_pct": 15,
+  "min": 1
+ },
+ {
+  "hora": "x",
+  "equipo": "pios",
+  "escenario": "silencio",
+  "min": 1
+ },
+ {
+  "hora": "x",
+  "equipo": "pios",
+  "escenario": "cpu",
+  "procesos": 4,
+  "min": 3,
+  "temp_max": 78
+ },
+ {
+  "hora": "x",
+  "equipo": "pios",
+  "escenario": "pausa",
+  "hasta": "15:20"
+ }
+]
