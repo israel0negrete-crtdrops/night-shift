@@ -1,0 +1,3 @@
+{"equipo_real": "Raspberry Pi 5", "escenario": "silencio", "inicio": 1792617080.864839, "fin": 1792617140.8650103, "esperado": "el equipo no envió", "detalle": "latido vivo sin enviar 1 min", "t": 1792617140.8650258}
+{"equipo_real": "Raspberry Pi 5", "escenario": "cpu", "inicio": 1792617140.8653893, "fin": 1792617320.8854563, "esperado": "saturación de CPU", "detalle": "4 procesos ocupados 3 min", "t": 1792617320.8854716}
+{"equipo_real": "Raspberry Pi 5", "escenario": "pausa", "inicio": 1792617320.8857276, "fin": 1792617600.0, "esperado": "sin latido (sin resolver)", "detalle": "latido terminado y retenido por el vigilante hasta las 15:20", "t": 1792617320.8958745}

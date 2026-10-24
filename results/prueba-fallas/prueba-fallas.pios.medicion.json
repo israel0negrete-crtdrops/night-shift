@@ -1,0 +1,25 @@
+{
+  "equipo": "pios",
+  "modelo": "gemma3:4b",
+  "opciones": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 8192
+  },
+  "inicio": 1792617695.0398192,
+  "pared_s": 478.1,
+  "total_s": 478.1,
+  "carga_s": 7.2,
+  "tokens_entrada": 2551,
+  "tokens_salida": 1296,
+  "entrada_tok_s": 26.9,
+  "salida_tok_s": 3.4,
+  "antes": {
+    "mem_disp_mb": 7759,
+    "temp_max_c": 40.25
+  },
+  "despues": {
+    "mem_disp_mb": 3701,
+    "temp_max_c": 66.1
+  }
+}

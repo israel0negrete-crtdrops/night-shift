@@ -1,0 +1,194 @@
+{
+  "noche": {
+    "desde": "2026-10-21 15:10",
+    "hasta": "2026-10-21 15:22"
+  },
+  "salud_general": "mala",
+  "fallas": [
+    {
+      "escenario": "interrupcion",
+      "equipo": "N100",
+      "inicio": "15:11:20",
+      "fin": "15:11:50",
+      "duracion_real_s": 30,
+      "esperado": "servicio reiniciado",
+      "detectado": true,
+      "incidente": 1,
+      "tipo_detectado": "servicio reiniciado",
+      "retraso_deteccion_s": 25,
+      "duracion_detectada_s": 35,
+      "sin_resolver": false
+    },
+    {
+      "escenario": "silencio",
+      "equipo": "Raspberry Pi 5",
+      "inicio": "15:11:20",
+      "fin": "15:12:20",
+      "duracion_real_s": 60,
+      "esperado": "el equipo no envió",
+      "detectado": true,
+      "incidente": 2,
+      "tipo_detectado": "latidos perdidos en el camino",
+      "retraso_deteccion_s": 28,
+      "duracion_detectada_s": 108,
+      "sin_resolver": false
+    },
+    {
+      "escenario": "corte",
+      "equipo": "Raspberry Pi 5",
+      "inicio": "15:11:50",
+      "fin": "15:12:50",
+      "duracion_real_s": 60,
+      "esperado": "latidos perdidos en el camino",
+      "detectado": false
+    },
+    {
+      "escenario": "cpu",
+      "equipo": "Raspberry Pi 5",
+      "inicio": "15:12:20",
+      "fin": "15:15:20",
+      "duracion_real_s": 180,
+      "esperado": "saturación de CPU",
+      "detectado": true,
+      "incidente": 4,
+      "tipo_detectado": "saturación de CPU",
+      "retraso_deteccion_s": 116,
+      "duracion_detectada_s": 82,
+      "sin_resolver": false
+    },
+    {
+      "escenario": "latencia",
+      "equipo": "Raspberry Pi 5",
+      "inicio": "15:12:50",
+      "fin": "15:14:20",
+      "duracion_real_s": 90,
+      "esperado": "latencia",
+      "detectado": true,
+      "incidente": 3,
+      "tipo_detectado": "latencia",
+      "retraso_deteccion_s": 36,
+      "duracion_detectada_s": 80,
+      "sin_resolver": false
+    },
+    {
+      "escenario": "memoria",
+      "equipo": "N100",
+      "inicio": "15:14:20",
+      "fin": "15:15:22",
+      "duracion_real_s": 62,
+      "esperado": "memoria baja",
+      "detectado": true,
+      "incidente": 5,
+      "tipo_detectado": "memoria baja",
+      "retraso_deteccion_s": 29,
+      "duracion_detectada_s": 50,
+      "sin_resolver": false
+    },
+    {
+      "escenario": "pausa",
+      "equipo": "Raspberry Pi 5",
+      "inicio": "15:15:20",
+      "fin": "15:20:00",
+      "duracion_real_s": 279,
+      "esperado": "sin latido (sin resolver)",
+      "detectado": true,
+      "incidente": 6,
+      "tipo_detectado": "servicio reiniciado",
+      "retraso_deteccion_s": 28,
+      "duracion_detectada_s": 282,
+      "sin_resolver": false
+    }
+  ],
+  "falsas_alarmas": [
+    {
+      "id": 7,
+      "equipo": "N100",
+      "tipo": "sin latido",
+      "inicio": "15:21:20"
+    },
+    {
+      "id": 8,
+      "equipo": "Raspberry Pi 5",
+      "tipo": "sin latido",
+      "inicio": "15:21:20"
+    }
+  ],
+  "reportes": {
+    "israel-MINI-N100C": {
+      "incidentes_json": 8,
+      "incidentes_omitidos": [],
+      "dice_sin_incidentes": false,
+      "inventa_incidentes": false,
+      "horas_inventadas": [],
+      "cifras_inventadas": [],
+      "causas_afirmadas": [
+        "Hechos observados: Ningún latido recibido de 15:21:20 a 15:22:00 (39 s; se esperaba uno cada 10 s). Al cierre de la ventana seguía sin llegar ningún latido. / Posibles explicaciones: Fallo en el equipo. / Causa confirmada: confirmada"
+      ],
+      "calificativos_sin_respaldo": [],
+      "comparacion_omitida": true,
+      "comparacion_inventada": false,
+      "medicion": {
+        "equipo": "israel-MINI-N100C",
+        "modelo": "gemma3:4b",
+        "opciones": {
+          "temperature": 0,
+          "seed": 42,
+          "num_ctx": 8192
+        },
+        "inicio": 1792617687.0892532,
+        "pared_s": 339.5,
+        "total_s": 339.5,
+        "carga_s": 7.4,
+        "tokens_entrada": 2551,
+        "tokens_salida": 1191,
+        "entrada_tok_s": 20.8,
+        "salida_tok_s": 5.7,
+        "antes": {
+          "mem_disp_mb": 6194,
+          "temp_max_c": 65.0
+        },
+        "despues": {
+          "mem_disp_mb": 2194,
+          "temp_max_c": 70.0
+        }
+      }
+    },
+    "pios": {
+      "incidentes_json": 8,
+      "incidentes_omitidos": [],
+      "dice_sin_incidentes": false,
+      "inventa_incidentes": false,
+      "horas_inventadas": [],
+      "cifras_inventadas": [],
+      "causas_afirmadas": [],
+      "calificativos_sin_respaldo": [],
+      "comparacion_omitida": true,
+      "comparacion_inventada": false,
+      "medicion": {
+        "equipo": "pios",
+        "modelo": "gemma3:4b",
+        "opciones": {
+          "temperature": 0,
+          "seed": 42,
+          "num_ctx": 8192
+        },
+        "inicio": 1792617695.0398192,
+        "pared_s": 478.1,
+        "total_s": 478.1,
+        "carga_s": 7.2,
+        "tokens_entrada": 2551,
+        "tokens_salida": 1296,
+        "entrada_tok_s": 26.9,
+        "salida_tok_s": 3.4,
+        "antes": {
+          "mem_disp_mb": 7759,
+          "temp_max_c": 40.25
+        },
+        "despues": {
+          "mem_disp_mb": 3701,
+          "temp_max_c": 66.1
+        }
+      }
+    }
+  }
+}
