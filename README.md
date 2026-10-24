@@ -79,8 +79,9 @@ and timing, the fault log, and the checker's `evaluacion.json`.
 Report folders are named after the morning they were written.
 
 `results/crudos/` has the raw data of October 21 to 23, gzipped: what the collector
-received on the N100 (`recibidos`), the relay's log (`intermediario`), each
-machine's own heartbeat log (`latido`) and watchdog log (`vigilante`).
+received on the N100 (`recibidos`), each machine's own heartbeat log
+(`latido`) and its watchdog log (`vigilante`, only on the days it restarted
+something).
 
 The files in `bin/` are byte-for-byte the ones that ran on both machines
 (checked with sha256 on October 24, 2026).
