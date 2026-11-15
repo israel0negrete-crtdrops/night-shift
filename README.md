@@ -42,7 +42,9 @@ wrote most of the code and ran it on the machines with him.
 | `checker/evaluar.py` | a laptop | compares injected faults with detected incidents, and each report with its JSON |
 
 Everything is standard-library Python 3 plus [Ollama](https://ollama.com). No
-sudo, no system services touched.
+sudo, no system services touched. The heartbeat reads `/proc/meminfo` and
+`/sys/class/thermal`, so the two lab machines must run **Linux**; replaying
+recorded nights (below) works anywhere Python 3 runs.
 
 ### The detector's rules
 
@@ -103,6 +105,20 @@ TZ=America/Mexico_City HOME=/tmp/replay python3 detector.py --desde 1792728000 -
 ```
 
 The JSON it writes is identical to the one in `results/` for both fault nights.
+
+### Re-running the checker
+
+From the repository root, `--local` grades what is already in `results/`
+without contacting the lab machines:
+
+```
+python3 checker/evaluar.py noche-2026-10-22 --local
+python3 checker/evaluar.py noche-2026-10-23 --local
+```
+
+It rewrites `results/<night>/evaluacion.json`; for both fault nights the result
+is identical to the committed one. Without `--local` it fetches the files over
+SSH from the two machines (see below).
 
 ## Running it on your own machines
 

@@ -2,7 +2,7 @@
 """Evalúa una noche: lo provocado contra lo detectado, y cada reporte contra su JSON.
 
     python3 evaluar.py noche-2026-10-22            # baja los archivos de los dos equipos y evalúa
-    python3 evaluar.py noche-2026-10-22 --local    # sólo evalúa lo que ya está en resultados/
+    python3 evaluar.py noche-2026-10-22 --local    # sólo evalúa lo que ya está en resultados/ (o results/)
 
 Corre en la Mac. Deja todo en resultados/<noche>/ (JSON, los dos Markdown, sus
 mediciones, la verdad de cada equipo) y escribe evaluacion.json.
@@ -27,6 +27,9 @@ import time
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
+# En el laboratorio, los resultados vivían junto al evaluador (resultados/); en el
+# repositorio público están en results/, en la raíz. Usa la que exista.
+RESULTADOS = next((p for p in (AQUI / "resultados", AQUI.parent / "results") if p.is_dir()), AQUI.parent / "results")
 EQUIPOS = {"edgelab-n100": "israel-MINI-N100C", "edgelab-rpi5": "pios"}
 COMPATIBLES = {  # qué tipos del detector cuentan como haber visto cada falla
     "interrupcion": ("servicio reiniciado", "sin latido"),
@@ -141,7 +144,7 @@ def evaluar_reporte(md, informe):
 
 def main():
     noche = sys.argv[1]
-    destino = AQUI / "resultados" / noche
+    destino = RESULTADOS / noche
     if "--local" not in sys.argv:
         bajar(noche, destino)
     informe = json.loads((destino / f"{noche}.json").read_text())
