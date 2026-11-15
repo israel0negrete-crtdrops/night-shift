@@ -42,9 +42,9 @@ wrote most of the code and ran it on the machines with him.
 | `checker/evaluar.py` | a laptop | compares injected faults with detected incidents, and each report with its JSON |
 
 Everything is standard-library Python 3 plus [Ollama](https://ollama.com). No
-sudo, no system services touched. The heartbeat reads `/proc/meminfo` and
-`/sys/class/thermal`, so the two lab machines must run **Linux**; replaying
-recorded nights (below) works anywhere Python 3 runs.
+sudo, no system services touched. The heartbeat and the writer read `/proc/meminfo` and
+`/sys/class/thermal`, so they need **Linux**. Replaying the detector and
+re-running the checker on recorded nights (below) work anywhere Python 3 runs.
 
 ### The detector's rules
 
